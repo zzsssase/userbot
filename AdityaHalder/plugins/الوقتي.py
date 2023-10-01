@@ -11,13 +11,13 @@
 #هههههههههههههههههههههههههههههههههههههههههههههههههه
 
 import asyncio
-import math
-import base64
-import os
-import shutil
-import time
-import requests
-from datetime import datetime
+
+from .. import *
+
+
+class FlagContainer:
+    is_active = False
+
 
 
 plugin_category = "الادوات"
