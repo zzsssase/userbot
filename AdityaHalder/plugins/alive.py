@@ -1,6 +1,6 @@
 from .. import *
 
-@app.on_message(commandx(["alive"]))
+@app.on_message(commandx(["فحص"]))
 async def alive_check(client, message):
     await message.reply_text("**🥀 I Aᴍ Aʟɪᴠᴇ Mʏ Dᴇᴀʀ Gᴇɴɪᴜs Mᴀsᴛᴇʀ ✨ ...**")
 
