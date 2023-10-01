@@ -23,7 +23,7 @@ class FlagContainer:
     is_active = False
 
 
-@ayra_cmd(pattern="mention(?: |$)(.*)")
+@app.on_message(commandx("all"))
 async def _(event):
     if event.fwd_from:
         return
@@ -38,7 +38,7 @@ async def _(event):
     )
 
 
-@ayra_cmd(pattern="(b|B)atal(?: |$)")
+@app.on_message(commandx("atal"))
 async def cancel_all(event):
     FlagContainer.is_active = False
     await event.reply("✅ Berhasil membatalkan tagall.")
