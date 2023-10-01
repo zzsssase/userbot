@@ -1,27 +1,6 @@
-# Ayra - UserBot
-# Copyright (C) 2021-2022 senpai80
-#
-# This file is a part of < https://github.com/senpai80/Ayra/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/senpai80/Ayra/blob/main/LICENSE/>.
-"""
-✘ **Bantuan Untuk Tag All**
-
-๏ **Perintah:** `all` <berikan pesan>
-◉ **Keterangan:** Tandai Anggota Grup Dengan Pesan/Tanpa Pesan
-
-๏ **Perintah:** `batal`
-◉ **Keterangan:** Untuk membatalkan tag all
-"""
-
-import asyncio
-
-from . import *
-
-
-class FlagContainer:
-    is_active = False
-
+from .. import *
+from ..modules.data import add_sudo, del_sudo
+from pyrogram.types import Message
 
 @ayra_cmd(pattern="mention(?: |$)(.*)")
 async def _(event):
