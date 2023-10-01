@@ -19,16 +19,6 @@ import time
 import requests
 from datetime import datetime
 
-from pySmartDL import SmartDL
-from telethon.errors import FloodWaitError
-from telethon.tl import functions
-from telethon.tl.functions.users import GetFullUserRequest
-from telethon.tl.types import MessageEntityMentionName
-
-from ..Config import Config
-from ..helpers.utils import _format
-from ..sql_helper.globals import addgvar, delgvar, gvarstatus
-from . import edit_delete, zedub, logging
 
 plugin_category = "الادوات"
 DEFAULTUSER = gvarstatus("ALIVE_NAME") or Config.ALIVE_NAME
