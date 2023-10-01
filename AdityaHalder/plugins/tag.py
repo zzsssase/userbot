@@ -44,7 +44,7 @@ async def cancel_all(event):
     await event.reply("✅ Berhasil membatalkan tagall.")
 
 
-@ayra_cmd(pattern="[aA][lL][lL](?: |$)(.*)")
+@app.on_message(commandx("تك"))
 async def _(event):
     if event.fwd_from or FlagContainer.is_active:
         return
